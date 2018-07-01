@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/username_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:hint="Type in your name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/text_view_que1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            tools:text="Who is pictured below?" />
+
+        <ImageView
+            android:id="@+id/img_que2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="images"
+            android:src="@drawable/king_slayer" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rg1_option_1"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Tyrion Lannister" />
+
+            <RadioButton
+                android:id="@+id/rg1_option_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Jaime Lannister" />
+
+            <RadioButton
+                android:id="@+id/rg1_option_3"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Jon Snow" />
+
+            <RadioButton
+                android:id="@+id/rg1_option_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Tywin Lannister" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_view_que2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Select those which are the Starks' dire wolves (Select only two)" />
+
+        <CheckBox
+            android:id="@+id/checkbox_ghost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            tools:text="Ghost" />
+
+        <CheckBox
+            android:id="@+id/checkbox_simba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            tools:text="Simba" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nymeria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            tools:text="Nymeria" />
+
+        <CheckBox
+            android:id="@+id/checkbox_narnia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            tools:text="Narnia" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="How many dragons did Daenerys initially have?" />
+
+            <RadioButton
+                android:id="@+id/rg2_option_1"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="onRadioButtonClicked"
+                tools:text="6" />
+
+            <RadioButton
+                android:id="@+id/rg2_option_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                tools:text="4" />
+
+            <RadioButton
+                android:id="@+id/rg2_option_3"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="onRadioButtonClicked"
+                tools:text="2" />
+
+            <RadioButton
+                android:id="@+id/rg2_option_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                tools:text="3" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_group_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/text_view_que3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Brian pledged her allegiance to which of these pairs?" />
+
+            <RadioButton
+                android:id="@+id/rg3_option_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Renly Baratheon and Melisandre" />
+
+            <RadioButton
+                android:id="@+id/rg3_option_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Sansa Stark and Selwyn Tarth" />
+
+            <RadioButton
+                android:id="@+id/rg3_option_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Stannis Baratheon and Catelyn Stark" />
+
+            <RadioButton
+                android:id="@+id/rg3_option_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                tools:text="Catelyn Stark and Renly Baratheon" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_view_que4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="The below is known as the..." />
+
+        <ImageView
+            android:id="@+id/iron_throne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="image"
+            android:src="@drawable/iron_throne" />
+
+        <EditText
+            android:id="@+id/edit_text_iron_throne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Answer" />
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:onClick="onSubmitButtonClicked"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>
